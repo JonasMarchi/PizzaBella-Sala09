@@ -1,38 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Princess+Sofia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=MonteCarlo&family=Princess+Sofia&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=MonteCarlo&family=Princess+Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=MonteCarlo&family=Petemoss&family=Princess+Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100&family=MonteCarlo&family=Petemoss&family=Princess+Sofia&display=swap');
 .fonte-monte-carlo {
     font-family: 'MonteCarlo', cursive;
+    height: fit-content;
+    background-color: transparent;
+}
+.fonte-montagu-slab{
+    font-family: 'Montagu Slab';
+}
+.fonte-petemoss{
+    font-family: 'Petemoss';
+}
+.fonte-princess-sofia{
+    font-family: 'Princess Sofia';
 }
 *{  
     /* estilo padrao para toda a página */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 html{
     scroll-behavior: smooth;
 }
 
-.topo-pagina{
-    background-color: red;
+.conteudo{
     position: relative;
 }
-.imagem-topo{
-    background-color: yellow;
-    width: 100%;
-    height: 446px;
-}
-.imagem-topo img{
+
+
+
+.imagem-linha{
     width: 100%;
     height: 446px;
 }
 
+.imagem-linha img{
+    width: 100%;
+    height: 446px;
+    object-fit: cover;
+    display: block;
+}
+
+
 .fonte-monte-carlo h1{
     font-size: 128px;
-    z-index: 1000;
     position: absolute; /* Retira o texto do fluxo normal */
     bottom: -24%;
     box-sizing: border-box; /* Garante que o padding não aumente a largura */
+    color: #000000;
+    background-color: transparent;
+}
+.fonte-montagu-slab h1{
+    font-size: 32px;
+    display: flex;
+    position: absolute;
+    bottom: -100px;
+    left: 380px;
+    color: #000000;
+}
+
+.rodizio-linha{
+    margin-top: 350px;
+}
+.rodizio-linha img{
+    width: 100%;
+    height: 633px;
+}
+
+.fonte-petemoss h1{
+    font-size: 96px;
+}
+
+
+.cardapio{
+    background-color: red;
+    display: flex;
+}
+
+.fonte-princess-sofia h2{
+    font-size: 128px;
+    justify-content: center;
+    /* nosso cardapio no centro */
 }
